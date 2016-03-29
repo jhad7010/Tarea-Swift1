@@ -8,18 +8,27 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+var rango = 1...100
+
+for numero in rango {
+    
+    // Si es divisible entre 5
+    if ( numero % 5 ) == 0 {
+        print("\(numero), #Bingo!!!")
+    } else if ( numero % 2 ) == 0 { //Revisa si es divisible entre 2
+        print("\(numero), #Par!")
+        
+    } else {
+        print("\(numero), #Impar!") // Al no cumplir las condiciones anteriores se determina que es Impar
+        
+    } // Ahora se evalúa el rango del número que esté entre 30 y 40.
+    if numero >= 30 && numero <= 40 {
+        print("\(numero), #Viva Swift")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    
+    
 }
+
 
