@@ -8,11 +8,13 @@
 
 import UIKit
 
+// A los compañeros de clase, favor copiar todo el programa dentro de su Playground para poderlo ejecutar.
 
 // Definición de rango de números a utilizar
 var rango = 1...100
 
 // La variable numero es la que se utilizará para las validaciones dentro del ciclo.
+
 for numero in rango {
     
     // Si es divisible entre 5
